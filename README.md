@@ -125,8 +125,6 @@ node 09_TESTS/canonical_hash_insertion_order.test.mjs
 node 09_TESTS/determinism.test.mjs
 node 09_TESTS/micro_tamper_detection.test.mjs
 
-If all tests pass, the system is sealed and reproducible.
-
 Operator Notes
 
 No programming knowledge is required.
