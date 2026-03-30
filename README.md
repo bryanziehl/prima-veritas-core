@@ -120,17 +120,23 @@ All tests are self-contained and reproducible.
 
 From the repository root:
 
+
 node 09_TESTS/canonical_hash_insertion_order.test.mjs
 node 09_TESTS/determinism.test.mjs
 node 09_TESTS/micro_tamper_detection.test.mjs
 
-Operator Notes
+
+If all tests pass, the system is sealed and reproducible.
+
+---
+
+## Operator Notes
 
 No programming knowledge is required.
 
 Open PowerShell:
 
-Start → type “PowerShell” → Enter
+Start → type "PowerShell" → Enter
 
 Navigate to the repository directory:
 
@@ -138,52 +144,60 @@ cd C:\pv_event_ledger
 
 Run the test commands above.
 
-No installation required.
+No installation required.  
 No configuration required.
 
-Design Principles
+---
+
+## Design Principles
 
 The system:
 
-preserves ambiguity
-refuses heuristic correction
-records missing data as missing
-surfaces conflicts without resolving them
-fails loudly instead of guessing
+- preserves ambiguity  
+- refuses heuristic correction  
+- records missing data as missing  
+- surfaces conflicts without resolving them  
+- fails loudly instead of guessing  
 
 Interpretation must occur outside the system.
 
-Canonical Contract
+---
+
+## Canonical Contract
 
 The canonical hash attests to:
 
-kernel_version
-spec_version
-entry_count
-final_entry_hash
+- kernel_version  
+- spec_version  
+- entry_count  
+- final_entry_hash  
 
 It does not attest to:
 
-reports
-summaries
-legal arguments
-analytics
-projections
+- reports  
+- summaries  
+- legal arguments  
+- analytics  
+- projections  
 
 That boundary is intentional.
 
-Governance
+---
+
+## Governance
 
 See:
 
-KERNEL_CHARTER.md
-SYSTEM_MAP.md
-HEADER_GUIDANCE.md
+- KERNEL_CHARTER.md  
+- SYSTEM_MAP.md  
+- HEADER_GUIDANCE.md  
 
 These documents define scope, invariants, and change control.
 
-Status
+---
 
-Version: 1.0.0
-Status: Reproducible system sealed
+## Status
+
+Version: 1.0.0  
+Status: Reproducible system sealed  
 Scope: Domain-agnostic
